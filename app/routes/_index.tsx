@@ -1,4 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
+import LatestArticle from "~/components/article/LatestArticle";
 import { Button } from "~/components/ui/button";
 
 export const meta: MetaFunction = () => {
@@ -10,41 +11,42 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div className="font-sans p-4">
-      <h1 className="text-3xl">Welcome to Remix</h1>
-      <ul className="list-disc mt-4 pl-6 space-y-2">
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/quickstart"
-            rel="noreferrer"
-          >
-            5m Quick Start
-          </a>
-        </li>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/start/tutorial"
-            rel="noreferrer"
-          >
-            30m Tutorial
-          </a>
-        </li>
-        <Button>Hello</Button>
-        <li>
-          <a
-            className="text-blue-700 underline visited:text-purple-900"
-            target="_blank"
-            href="https://remix.run/docs"
-            rel="noreferrer"
-          >
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <main className="flex items-center flex-col bg-[#fafafa]">
+      <LatestArticle article={{
+        title: "5 mistakes that kill your start-up before it takes off",
+        description: "We often hear about the ENIAC, hailed as the first computer, but its story is just one thread in a rich tapestry woven by brilliant",
+        profileImage: "/img/profile.png",
+        name: "Nora Nora",
+        time: "7 mins",
+        creationDate: "July 12, 2024",
+        image: "/img/blogimage.png",
+        link: "#",
+        tag: "business"
+      }} />
+
+<LatestArticle article={{
+        title: "5 mistakes that kill your start-up before it takes off",
+        description: "We often hear about the ENIAC, hailed as the first computer, but its story is just one thread in a rich tapestry woven by brilliant",
+        profileImage: "/img/profile.png",
+        name: "Nora Nora",
+        time: "7 mins",
+        creationDate: "July 12, 2024",
+        image: "/img/blogimage2.jpg",
+        link: "#",
+        tag: "business"
+      }} />
+
+<LatestArticle article={{
+        title: "5 mistakes that kill your start-up before it takes off",
+        description: "We often hear about the ENIAC, hailed as the first computer, but its story is just one thread in a rich tapestry woven by brilliant",
+        profileImage: "/img/profile.png",
+        name: "Nora Nora",
+        time: "7 mins",
+        creationDate: "July 12, 2024",
+        image: "/img/blogimage3.jpg",
+        link: "#",
+        tag: "business"
+      }} />
+    </main>
   );
 }
