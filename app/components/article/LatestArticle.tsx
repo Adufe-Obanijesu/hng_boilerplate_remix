@@ -18,7 +18,7 @@ export default function LatestArticle({ article }: { article: props }) {
             <article className="text-[#525252] max-w-[1000px] bg-[#fafafa]">
                 <div className="grid md:grid-cols-2 gap-[24px] p-[24px] md:border-b-[1px] border-[#525252]">
                     <div className="space-y-[16px] md:px-[8px] lg:p-[16px] p-[16px]">
-                        <span className="bg-[#F97316] pl-[10px] pr-[12px] py-[4px] rounded-full inline-flex justify-center items-center gap-[6px] text-[12px] font-[700]">
+                        <span className="bg-[hsl(var(--chart-5))] pl-[10px] pr-[12px] py-[4px] rounded-full inline-flex justify-center items-center gap-[6px] text-[12px] font-[700]">
                             <span className="h-[8px] w-[8px] rounded-full bg-black"></span>
                             <div className="uppercase">
                                 {article.tag}
