@@ -15,7 +15,7 @@ interface props {
 export default function LatestArticle({ article }: { article: props }) {
     return (
         <Link to={article.link}>
-            <article className="text-muted-foreground max-w-[1000px] bg-[#fafafa]">
+            <article className="text-muted-foreground max-w-[792px] bg-[#fafafa]">
                 <div className="grid md:grid-cols-5 gap-[24px] md:py-[32px] py-[16px]">
                     <div className="order-2 md:order-1 md:col-span-3 space-y-[8px] md:space-y-[16px]">
                         <span className="bg-border pl-[10px] pr-[12px] py-[4px] rounded-full inline-flex justify-center items-center gap-[6px] text-[12px] font-[700]">
