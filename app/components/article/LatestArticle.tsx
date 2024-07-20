@@ -16,8 +16,8 @@ export default function LatestArticle({ article }: { article: props }) {
     return (
         <Link to={article.link}>
             <article className="text-muted-foreground max-w-[1000px] bg-[#fafafa]">
-                <div className="grid md:grid-cols-2 gap-[24px] md:py-[32px] py-[16px]">
-                    <div className="order-2 md:order-1 space-y-[8px] md:space-y-[16px]">
+                <div className="grid md:grid-cols-5 gap-[24px] md:py-[32px] py-[16px]">
+                    <div className="order-2 md:order-1 md:col-span-3 space-y-[8px] md:space-y-[16px]">
                         <span className="bg-border pl-[10px] pr-[12px] py-[4px] rounded-full inline-flex justify-center items-center gap-[6px] text-[12px] font-[700]">
                             <span className="h-[8px] w-[8px] rounded-full bg-black"></span>
                             <div className="uppercase">
@@ -52,7 +52,7 @@ export default function LatestArticle({ article }: { article: props }) {
                         </div>
 
                     </div>
-                    <div className="order-1 md:order-2 flex md:items-end">
+                    <div className="order-1 md:order-2 md:col-span-2 flex md:items-end">
                         <img src={article.image} alt={article.title} className="w-full md:h-[250px] h-[230px] object-cover rounded-[6px] md:rounded-[8px]" />
                     </div>
                 </div>
