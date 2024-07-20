@@ -25,7 +25,7 @@ export default function LatestArticle({ article }: { article: props }) {
                             </div>
                         </span>
 
-                        <h3 className="md:text-[28px] text-[20px] md:font-[600] font-[700] capitalize leading-[normal]">
+                        <h3 className="md:text-[28px] text-[20px] md:font-[600] font-[700] capitalize leading-[normal] tracking-wider">
                             {article.title}
                         </h3>
 
