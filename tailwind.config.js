@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 import tailwindcssAnimate from "tailwindcss-animate";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const tailwindConfig = {
   darkMode: ["class"],
